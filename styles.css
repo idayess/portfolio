@@ -293,14 +293,20 @@ html.is-locked.is-unlocking .hero__content {
 
 .project__inner {
   width: 100%;
+  max-width: 1416.75px;
+  margin-inline: auto;
   display: grid;
   grid-template-columns: 330.75px minmax(0, 1030px);
   gap: clamp(36px, 3.7vw, 56px);
   align-items: start;
 }
 
-.project__inner--wide-gap { gap: clamp(46px, 5vw, 76px); }
+.project__inner--wide-gap {
+  max-width: 1436.75px;
+  gap: clamp(46px, 5vw, 76px);
+}
 .project__inner--showcase {
+  max-width: 1436.4px;
   grid-template-columns: 330.75px minmax(0, 1012.65px);
   gap: clamp(46px, 6.15vw, 93px);
 }
