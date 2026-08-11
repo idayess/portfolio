@@ -195,7 +195,7 @@ html.is-locked.is-unlocking .hero__content {
 }
 
 .hero {
-  min-height: 866px;
+  min-height: max(866px, 100svh);
   display: grid;
   place-items: center;
   padding: 0 var(--page-pad);
