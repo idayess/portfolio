@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru" class="is-locked">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Портфолио продуктового дизайнера Ida Yess">
+  <title>Ida Yess — Product Designer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="access-gate" role="dialog" aria-modal="true" aria-labelledby="access-title">
+    <div class="access-gate__panel">
+      <h1 id="access-title">Введите пароль</h1>
+      <form class="access-gate__form" novalidate>
+        <label class="sr-only" for="portfolio-password">Пароль</label>
+        <input
+          id="portfolio-password"
+          class="access-gate__input"
+          type="password"
+          inputmode="numeric"
+          pattern="[0-9]*"
+          maxlength="4"
+          autocomplete="off"
+          placeholder="Пароль"
+          aria-describedby="access-error"
+          required
+        >
+        <button class="access-gate__button" type="submit">Войти</button>
+        <p class="access-gate__error" id="access-error" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <main id="portfolio-content" aria-hidden="true" inert>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <img class="hero__photo" src="assets/portrait.png" alt="Портрет Ida Yess">
+        <div class="hero__content">
+          <div class="hero__title-block">
+            <h1 id="hero-title">Ida Yess</h1>
+            <div class="hero__subtitle">
+              <p>Senior product designer<br>with 7 years of experience</p>
+              <img class="hero__logos" src="assets/logos.png" alt="" aria-hidden="true">
+            </div>
+          </div>
+          <nav class="hero__actions" aria-label="Контакты">
+            <a class="button" href="assets/ida_yess_cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            <a class="button" href="https://t.me/idasuper" target="_blank" rel="noopener noreferrer">Telegram</a>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="part project" aria-labelledby="marathon-title">
+      <div class="project__inner">
+        <header class="project__intro">
+          <h2 id="marathon-title">Т-Банк<br>Марафон накоплений</h2>
+          <p>Разработала универсальный интерфейс для&nbsp;различных форматов марафонов</p>
+        </header>
+        <div class="screens" aria-label="Экраны марафона накоплений">
+          <img src="assets/screens/marathon-1.png" alt="Главная накопительного счёта" loading="lazy">
+          <img src="assets/screens/marathon-2.png" alt="Экран марафона накоплений" loading="lazy">
+          <img src="assets/screens/marathon-3.png" alt="Состояние марафона накоплений" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="part project" aria-labelledby="calculator-title">
+      <div class="project__inner project__inner--wide-gap">
+        <header class="project__intro">
+          <h2 id="calculator-title">Т-Банк<br>Калькулятор накопительных продуктов</h2>
+            <p>Унифицировала пользовательский опыт 10 накопительных продуктов в&nbsp;едином интерфейсе калькулятора</p>
+        </header>
+        <div class="screens" aria-label="Экраны калькулятора накопительных продуктов">
+          <img src="assets/screens/calculator-1.png" alt="Калькулятор накопительного счёта" loading="lazy">
+          <img src="assets/screens/calculator-2.png" alt="Калькулятор вклада" loading="lazy">
+          <img src="assets/screens/calculator-3.png" alt="Калькулятор Т-Счёта" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="part project" aria-labelledby="duels-title">
+      <div class="project__inner project__inner--wide-gap">
+        <header class="project__intro">
+          <h2 id="duels-title">Т-Банк<br>Инвест-поединки</h2>
+          <p>Придумала интерфейс игры: трейдеры соревнуются, кто больше заработает за&nbsp;5&nbsp;минут</p>
+        </header>
+        <div class="screens" aria-label="Экраны инвестиционных поединков">
+          <img src="assets/screens/duel-1.png" alt="Поиск соперника" loading="lazy">
+          <img src="assets/screens/duel-2.png" alt="Выбор актива" loading="lazy">
+          <img src="assets/screens/duel-3.png" alt="Ход инвестиционного поединка" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="part project project--concerts" aria-labelledby="concerts-title">
+      <div class="project__inner project__inner--wide-gap">
+        <header class="project__intro">
+          <h2 id="concerts-title">Яндекс Музыка<br>Концерты</h2>
+          <p>Спроектировала дизайн контентной вертикали Концерты: от&nbsp;раздела и&nbsp;экрана мероприятия до&nbsp;рекомендаций на&nbsp;главной</p>
+        </header>
+        <div class="screens" aria-label="Экраны концертной вертикали Яндекс Музыки">
+          <img src="assets/screens/music-1.png" alt="Главная раздела «Концерты»" loading="lazy">
+          <img src="assets/screens/music-2.png" alt="Подборки концертов" loading="lazy">
+          <img src="assets/screens/music-3.png" alt="Каталог всех концертов" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="part project project--essence" aria-labelledby="essence-title">
+      <div class="project__inner project__inner--wide-gap">
+        <header class="project__intro">
+          <h2 id="essence-title">Экран<br>концерта</h2>
+          <p>Создала единый интерфейс концерта под&nbsp;различные сценарии: от&nbsp;сольных выступлений до&nbsp;фестивалей</p>
+        </header>
+        <div class="screens" aria-label="Варианты экрана концерта">
+          <img src="assets/screens/music-4.png" alt="Экран концерта SALUKI" loading="lazy">
+          <img src="assets/screens/music-5.png" alt="Площадка и даты концертов SALUKI" loading="lazy">
+          <img src="assets/screens/music-6.png" alt="Даты концертов и популярные треки SALUKI" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Только для&nbsp;собеседований. Пожалуйста, не&nbsp;распространяйте материалы</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
