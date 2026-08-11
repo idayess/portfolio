@@ -78,7 +78,7 @@ html.is-locked body {
 html.is-locked .hero__photo,
 html.is-locked .hero__content {
   opacity: 0;
-  transform: translateY(12px);
+  transform: translateY(10px);
 }
 
 html.is-locked.is-unlocking .hero__photo,
@@ -86,12 +86,12 @@ html.is-locked.is-unlocking .hero__content {
   opacity: 1;
   transform: translateY(0);
   transition:
-    opacity 560ms cubic-bezier(.22, 1, .36, 1) 120ms,
-    transform 600ms cubic-bezier(.22, 1, .36, 1) 120ms;
+    opacity 520ms cubic-bezier(.22, 1, .36, 1) 260ms,
+    transform 560ms cubic-bezier(.22, 1, .36, 1) 260ms;
 }
 
 html.is-locked.is-unlocking .hero__content {
-  transition-delay: 190ms;
+  transition-delay: 320ms;
 }
 
 .access-gate {
@@ -106,8 +106,8 @@ html.is-locked.is-unlocking .hero__content {
   opacity: 1;
   visibility: visible;
   transition:
-    opacity 420ms cubic-bezier(.4, 0, .2, 1),
-    visibility 420ms;
+    opacity 320ms cubic-bezier(.4, 0, .2, 1) 80ms,
+    visibility 0s linear 400ms;
 }
 
 .is-unlocking .access-gate {
@@ -119,6 +119,14 @@ html.is-locked.is-unlocking .hero__content {
 .access-gate__panel {
   width: min(620px, 100%);
   text-align: center;
+  transition:
+    opacity 180ms ease,
+    transform 220ms cubic-bezier(.4, 0, .2, 1);
+}
+
+.is-unlocking .access-gate__panel {
+  opacity: 0;
+  transform: translateY(-10px);
 }
 
 .access-gate h1 {
@@ -442,6 +450,7 @@ html.is-locked.is-unlocking .hero__content {
 
 @media (prefers-reduced-motion: reduce) {
   .access-gate { transition: none; }
+  .access-gate__panel { transition: none; }
   .access-gate__form.is-shaking { animation: none; }
   .button { transition: none; }
   html.is-locked .hero__photo,

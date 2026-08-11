@@ -4,7 +4,7 @@ document.querySelectorAll('a[href="#"]').forEach((link) => {
 
 const ACCESS_PASSWORD = '9090';
 const ACCESS_SESSION_KEY = 'ida-portfolio-access';
-const UNLOCK_DURATION = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 850;
+const UNLOCK_DURATION = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 940;
 const root = document.documentElement;
 const gate = document.querySelector('.access-gate');
 const form = document.querySelector('.access-gate__form');
