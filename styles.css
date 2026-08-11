@@ -367,7 +367,11 @@ html.is-locked.is-unlocking .hero__content {
   scroll-snap-align: end;
 }
 
-.site-footer p { margin: 0; }
+.site-footer p {
+  width: 100%;
+  max-width: 1436.75px;
+  margin: 0 auto;
+}
 
 @media (min-width: 1101px) {
   .hero__content { padding-bottom: 32px; }
